@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Poppins:wght@500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(122, 183, 245);
+}
+.header h1{
+    font-family: homemade apple ;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.sub_header{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin: 0 0 0 3rem;
+}
+.sub_header .searchbar{
+    display: flex;
+    align-items: center;
+    
+}
+.sub_header .searchbar input{
+    height: 5rem;
+    width: 53rem;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    border-style: none;
+}
+.sub_header .searchbar i{
+    background-color: white;
+    padding: 1rem;
+    font-size: 3rem;
+    border-radius: 0 5px 5px 0 ;
+}
+.sub_header .sign_up{
+    width: 40rem;
+   
+}
+.sub_header .sign_up a,i{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: ubuntu;
+    padding: 1rem;
+    font-size: 2.5rem;
+    border-radius: 5px 5px 5px 5px;
+}
+.sub_header .sign_up i{
+   margin-left: 6.5rem;
+   background: transparent;
+}
