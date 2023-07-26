@@ -24,6 +24,7 @@ body{
 .sub_header .searchbar{
     display: flex;
     align-items: center;
+    flex-shrink: 1 ;
     
 }
 .sub_header .searchbar input{
@@ -62,51 +63,47 @@ body{
 
 
 /* general section css */
-.product h2{
+
+.general_section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .product h2{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
     margin: 2rem;
 }
-
-.general_section{
-   display: flex;
-   flex-wrap: wrap;
-   column-gap: 2%;
-   margin: 2rem;
-}
-.general_section .box{
-    background-color: rgb(178, 246, 246);
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    align-items: center;
-    border: 3px solid rgb(62, 61, 61);
-    border-radius: 5px;
-    width: 22rem;
-    height: 32rem;
-    margin-bottom: 2rem;
-}
-.general_section .box img{
-    width: 100%;
-    align-self: center;
-}
-.general_section .box p{
   
-    font-family: ubuntu;
-    font-size: 2rem;
-    
-}.general_section .box p span{
-    font-weight: 400;
-    font-size: 3rem;
-}
+  .general_section .box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .general_section .box img {
+    max-width: 100%;
+    height: auto;
+  }
+  .general_section .box:hover{
+  
 
+  }
+
+  
+  .general_section .box p {
+    margin: 10px 0;
+  }
+
+/* this footer csss */
 .footer{
     height: 10rem;
     background-color: rgb(145, 193, 221);
     display: flex;
     justify-content: space-around;
 }
-.footer a{
+.footer a,p{
     font-size: 2rem;
     font-family: Poppins;
     text-decoration: none;
@@ -114,4 +111,26 @@ body{
 }
 .footer a:hover{
     color: red;
+}
+
+
+
+
+
+
+
+
+/*  this is responsive css for all devices  */
+
+@media (max-width:400){
+    .general_section {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      }
+}
+
+
+@media (max-width:600){
+    .general_section {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
 }
