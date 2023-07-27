@@ -12,6 +12,7 @@ body{
     font-family: homemade apple ;
     font-size: 4rem;
     text-align: center;
+    font-weight: 600;
 }
 
 .sub_header{
@@ -23,6 +24,7 @@ body{
 .sub_header .searchbar{
     display: flex;
     align-items: center;
+    flex-shrink: 1 ;
     
 }
 .sub_header .searchbar input{
@@ -31,6 +33,7 @@ body{
     border-radius: 5px 0 0 5px;
     font-size: 1rem;
     outline: none;
+    font-size: 2.5rem;
     text-align: center;
     border-style: none;
 }
@@ -56,4 +59,78 @@ body{
 .sub_header .sign_up i{
    margin-left: 6.5rem;
    background: transparent;
+}
+
+
+/* general section css */
+
+.general_section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  .product h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    margin: 2rem;
+}
+  
+  .general_section .box {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .general_section .box img {
+    max-width: 100%;
+    height: auto;
+  }
+  .general_section .box:hover{
+  
+
+  }
+
+  
+  .general_section .box p {
+    margin: 10px 0;
+  }
+
+/* this footer csss */
+.footer{
+    height: 10rem;
+    background-color: rgb(145, 193, 221);
+    display: flex;
+    justify-content: space-around;
+}
+.footer a,p{
+    font-size: 2rem;
+    font-family: Poppins;
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    color: red;
+}
+
+
+
+
+
+
+
+
+/*  this is responsive css for all devices  */
+
+@media (max-width:400){
+    .general_section {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      }
+}
+
+
+@media (max-width:600){
+    .general_section {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
 }
