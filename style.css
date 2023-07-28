@@ -202,10 +202,7 @@ body{
         .general_section {
             grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
           }
-          .general_section .box img {
-            max-width: 70%;
-            height: auto;
-          }
+          
       
 }
 
@@ -216,7 +213,13 @@ body{
         width: auto;
     }
     .general_section {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+      .general_section .box p {
+       font-size: 10px;
+      }
+      .general_section .box span{
+        font-size: 20px;
       }
     
 }
