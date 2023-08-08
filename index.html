@@ -21,7 +21,7 @@
             
             <div class="searchbar" id="searchbar">
                 <!-- <div class="logo">lucid-merch</div> -->
-                <input type="text" placeholder="SEARCH HERE">
+                <input type="text" placeholder="SEARCH HERE" id="search-item" onkeyup="search()">
                 <i class="fa fa-search"></i> 
             </div>
             
@@ -35,16 +35,18 @@
     </header>
     
     <!-- general section stART -->
-    <section class="product">   
+    <section class="product" id="product">   
         <h2>General Section</h2>
         <div class="general_section" id="general_section">
             <div class="box">
                 <img src="image/tshirt.jpg" alt="">
+                <h3>arch</h3>
                 <p>Rs. <span>999</span>/-</p>
             </div>
             
             <div class="box">
                 <img src="image/tshirt2.jpg" alt="">
+                <h3>silicon vally</h3>
                 <p>Rs.<span>999</span>/-</p>
             </div>
             
@@ -75,6 +77,7 @@
             
             <div class="box">
                 <img src="image/tshirt8.jpg" alt="">
+                <h3>coffee</h3>
                 <p>RS.<span>999</span>/-</p>
             </div>
         </div>
@@ -116,11 +119,13 @@
             
             <div class="box">
                 <img src="image/tshirt7.jpg" alt="">
+                <h3>stoicism</h3>
                 <p>RS.<span>999</span>/-</p>
             </div>
             
             <div class="box">
                 <img src="image/tshirt9.jpg" alt="">
+                <h3>open source</h3>
                 <p>RS.<span>999</span>/-</p>
             </div>
         </div>
@@ -140,6 +145,7 @@
 
        </div>
     </footer>
+    <script src="script.js"></script>
         
 </body>
 </html>
